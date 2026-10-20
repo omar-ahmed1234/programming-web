@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Directory - CodeSpace</title>
+  <link rel="stylesheet" href="C:\Users\A\OneDrive\Desktop\Level 3 project\System project\studio-lab\css\styles.css">
+</head>
+    <script src="C:\Users\A\OneDrive\Desktop\Level 3 project\System project\Programming Web\js\data.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <a class="logo" href="index.html">&lt;/&gt; CodeSpace</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="validation.html">Register</a>
+            <a class="active" href="data.html">Developers</a>
+        </nav>
+    </header>
+
+    <main class="directory">
+        <p class="eyebrow">PROGRAMMING COMMUNITY</p>
+        <h1>Developer <span>Directory</span></h1>
+        <p class="description">
+            Search, explore, and sort our sample developer records.
+        </p>
+
+        <section class="table-card">
+            <div class="toolbar">
+                <input
+                    type="search"
+                    id="search-input"
+                    placeholder="Search name, city, or skill..."
+                    aria-label="Search developers"
+                >
+
+                <button class="button secondary" id="sort-name" type="button">
+                    Sort by Name ↑
+                </button>
+
+                <button class="button secondary" id="sort-age" type="button">
+                    Sort by Age ↑
+                </button>
+            </div>
+
+            <p id="result-count" class="result-count"></p>
+
+            <div class="table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>City</th>
+                            <th>Programming Skill</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="developer-table-body"></tbody>
+                </table>
+            </div>
+
+            <p id="empty-state" class="empty-state" hidden>
+                No developers found. Try another search.
+            </p>
+        </section>
+
+        <p class="form-note">
+            Note: All records are fictional sample data for this project.
+        </p>
+    </main>
+
+    <footer>
+        <p>© 2026 CodeSpace | Programming Web Project</p>
+    </footer>
+
+</body>
+</html>

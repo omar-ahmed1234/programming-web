@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - CodeSpace</title>
+     <link rel="stylesheet" href="C:\Users\A\OneDrive\Desktop\Level 3 project\System project\studio-lab\css\styles.css">
+    <script src="C:\Users\A\OneDrive\Desktop\Level 3 project\System project\Programming Web\js\validation.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <a class="logo" href="index.html">&lt;/&gt; CodeSpace</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a class="active" href="validation.html">Register</a>
+            <a href="data.html">Developers</a>
+        </nav>
+    </header>
+
+    <main class="form-container">
+        <section class="form-card">
+            <p class="eyebrow">JOIN OUR COMMUNITY</p>
+            <h1>Create Your Account</h1>
+            <p class="description">
+                Fill in your information to join CodeSpace.
+            </p>
+
+            <div id="success-message" class="success" hidden>
+                Registration form validated successfully!
+                This is a demo; no data was sent to a server.
+            </div>
+
+            <form id="registration-form" novalidate>
+                <div class="field">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                    <small class="error" id="name-error"></small>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" placeholder="name@example.com">
+                    <small class="error" id="email-error"></small>
+                </div>
+
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="At least 8 characters">
+                    <small class="error" id="password-error"></small>
+                </div>
+
+                <div class="field">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Repeat your password">
+                    <small class="error" id="confirm-password-error"></small>
+                </div>
+
+                <div class="field">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" placeholder="Enter your age">
+                    <small class="error" id="age-error"></small>
+                </div>
+
+                <button class="button primary submit-button" type="submit">
+                    Create Account
+                </button>
+            </form>
+
+            <p class="form-note">
+                Demo project built with HTML, CSS, and JavaScript.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 CodeSpace | Programming Web Project</p>
+    </footer>
+
+</body>
+</html>
